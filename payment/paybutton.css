@@ -1,0 +1,22 @@
+.weui-btn{
+    margin: 45% auto;
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color:#1aad19;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 1px solid #1aad19;
+   
+}
+.weui-bin_primary{
+    background:#ffffff;
+}

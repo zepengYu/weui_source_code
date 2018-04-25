@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    /* 手机不同厂商，做自己的一些体验，这是有损统一体验的， */
+    /* css 希望所有手机都一样，一张白纸，将厂商的欲望抹平，css reset */
+    /* -webkit-tap-highlight-color 不规范的属性按上去的高亮就透明，干掉了这种特征 */
+    -webkit-tap-highlight-color:red;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    
+}
+body{
+    line-height: 1.3;
+    font-family: -apple-system-font, Helvetica Neue,Helvetica,sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.page,body{
+    background: white;
+}
+/* 页面框架容器 */
+.container{
+    overflow: hidden;
+}
+/* 移动端单页 一页显示 */
+.container,.page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.page{
+    overflow-y: auto;
+    /* 将滚动感知touch，体验更好 */
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+.page__hd{
+    padding: 40px;
+    /* background: #000; */
+}
+.page__photo{
+    text-align: left;
+    font-weight: 400;
+    width: 100px;
+    height: 100px;
+    /* background: blue; */
+    margin: 0 auto;
+    background: url(./30.jpg);
+    background-size:cover;
+}
+.page__title{
+    color:#1aad19;
+    font-size: 22px;
+    text-align:center;
+    margin:-3% auto;
+    letter-spacing:3px;
+}
+.page__md{
+    margin: 20% auto;
+    text-align:center;
+}
+.page__firm{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing:3px;
+}
+.page__money{
+    font-size: 2.6em;
+    font-style: normal;
+    letter-spacing:-2px;
+    display: block;
+    overflow: hidden;
+    word-break: normal;
+    word-wrap: break-word;
+    /* font-weight: 550; */
+    font-family: "microsoft yahei";
+    -webkit-font-smoothing: antialiased;
+}
